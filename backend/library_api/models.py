@@ -8,9 +8,7 @@ class Book(models.Model):
         NONFICTION = 'Nonfiction'
         OTHER = 'Other'
 
-    author_fn = models.TextField(max_length=30, blank=False)
-    author_mi = models.TextField(max_length=20, blank=True)
-    author_ln = models.TextField(max_length=30, blank=True)
+    author_name = models.TextField(max_length=100, blank=False, default="John Doe")
     title = models.TextField(max_length=100, blank=False)
     genre = models.TextField(choices=Genre.choices, blank=True)
     isbn = models.TextField(max_length=15, blank=True)

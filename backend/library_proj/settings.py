@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_filters',
     'library_api.apps.LibraryApiConfig',
 ]
 
@@ -71,6 +72,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'library_proj.wsgi.application'
 
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',)
+}
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
