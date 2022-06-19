@@ -1,11 +1,11 @@
 import './App.css';
-import GetBook from './components/GetBook';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AppHead from './components/AppHead/AppHead'
 
 function App() {
   return (
     <div className="App">
-      <GetBook isbn_data="9780061997228"/>
+      <AppHead />
     </div>
   );
 }
