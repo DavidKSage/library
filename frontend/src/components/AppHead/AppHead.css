@@ -1,11 +1,17 @@
-.button-lav {
-    background-color: lavender;
-    border-color: lavender;
+.button-grey {
+    background-color: darkgray;
+    border-color: black;
     color: black;
   }
+  
+  .button-grey:hover {
+    background-color: black;
+    color: white;
+    outline-color: black;
+  }
 
-.button-grey {
-  background-color: darkgray;
-  border-color: black;
-  color: black;
-}
+  .button-grey
+
+  .button-grey:onclick {
+    outline: black;
+  }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, Row, Col } from 'react-bootstrap';
+import { Card, CardBody, CardTitle, Button, Row, Col } from 'reactstrap';
 import './AppHead.css';
 
 
@@ -7,10 +7,12 @@ const AppHead = () => {
     return(
         <React.Fragment>
         <Card style={{marginBottom: "10px", border: 'none'}}>
-            <Card.Body>
-                <Card.Title style={{fontSize:  '48px'}}>Simple Library Catalog</Card.Title>
-                <Row style={{paddingTop: "6px"}}>
+            <CardBody>
+                <CardTitle style={{fontSize:  '48px', paddingBottom: "12px"}}>Library Catalog</CardTitle>
+                <Row>
                     <Col>
+                        <Button className="button-grey">List Books</Button>
+                    </Col>                    <Col>
                         <Button className="button-grey">Add Book</Button>
                     </Col>
                     <Col>
@@ -23,9 +25,9 @@ const AppHead = () => {
                         <Button className="button-grey">Search Catalog</Button>
                     </Col>
                 </Row>
-            </Card.Body>
+            </CardBody>
         </Card>
-        Test
+        <h1 style={{marginTop: '60px'}}>Data Goes Here</h1>
         </React.Fragment>
         
     )
