@@ -1,15 +1,9 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import BookList from '../src/components/BookList/BookList';
-import AppMenu from './components/AppMenu/AppMenu';
+import BookList from '../src/components/BookList';
+import AddBook from '../src/components/AddBook';
+import AppMenu from './components/AppMenu';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <AppHead />
-//     </div>
-//   );
-// }
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -19,6 +13,7 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<AppMenu />} />
           <Route exact path="/booklist" element={<BookList />} />
+          <Route exact path="/addbook" element={<AddBook />} />
         </Routes>
       </Router>
   );

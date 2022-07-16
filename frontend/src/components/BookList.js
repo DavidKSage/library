@@ -1,4 +1,4 @@
-import AppHead from "../AppMenu/AppMenu";
+import AppHead from "./AppMenu";
 
 const BookList = () => {
     return(

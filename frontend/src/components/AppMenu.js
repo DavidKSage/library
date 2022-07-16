@@ -3,7 +3,7 @@ import { Card, CardBody, CardTitle, Button, Row, Col } from 'reactstrap';
 import { useNavigate } from "react-router-dom";
 
 import './AppMenu.css';
-import '../../App.css';
+import '../App.css';
 
 const AppMenu = () => {
 
@@ -13,7 +13,7 @@ const AppMenu = () => {
         <React.Fragment>
         <Card style={{marginBottom: "10px", border: 'none', textAlign: "center"}}>
             <CardBody>
-                <CardTitle style={{fontSize:  '48px', paddingBottom: "24px", textAlign: 'center'}}>Library Catalog</CardTitle>
+                <CardTitle onClick={() => navigate("/")} style={{fontSize:  '48px', paddingBottom: "24px", textAlign: 'center'}}>Library Catalog</CardTitle>
                 <Row>
                     <Col></Col>
                     <Col>
