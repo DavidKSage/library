@@ -7,29 +7,29 @@ const BookForm = () => {
             <Row>
                 <Col md={6}>
                 <FormGroup>
-                    <Label for="authorFNLabel">
+                    <Label for="author_fn">
                     Author (First Name)
                     </Label>
                     <Input
-                    id="authorFN"
-                    name="authorFN"
+                    id="author_fn"
+                    name="author_fn"
                     />
                 </FormGroup>
                 </Col>
                 <Col md={6}>
                 <FormGroup>
-                    <Label for="authorLNLable">
+                    <Label for="author_ln">
                     Author (Last Name)
                     </Label>
                     <Input
-                    id="authorLN"
-                    name="authorLN"
+                    id="author_ln"
+                    name="author_ln"
                     />
                 </FormGroup>
                 </Col>
             </Row>
             <FormGroup>
-                <Label for="titleLabel">
+                <Label for="title">
                 Title
                 </Label>
                 <Input
@@ -39,26 +39,26 @@ const BookForm = () => {
             </FormGroup>
             <Row>
                 <Col md={6}>
-                <FormGroup>
-                    <Label for="isbnLabel">
-                    ISBN
-                    </Label>
-                    <Input
-                    id="isbn"
-                    name="isbn"
-                    />
-                </FormGroup>
+                    <FormGroup>
+                        <Label for="genre]">
+                        Genre
+                        </Label>
+                        <Input
+                        id="genre"
+                        name="genre"
+                        />
+                    </FormGroup>
                 </Col>
                 <Col md={6}>
-                <FormGroup>
-                    <Label for="genreLabel">
-                    Genre
-                    </Label>
-                    <Input
-                    id="genre"
-                    name="genre"
-                    />
-                </FormGroup>
+                    <FormGroup>
+                        <Label for="isbn">
+                        ISBN
+                        </Label>
+                        <Input
+                        id="isbn"
+                        name="isbn"
+                        />
+                    </FormGroup>
                 </Col>
             </Row>
         </Form>

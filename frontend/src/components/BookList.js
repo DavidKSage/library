@@ -4,28 +4,26 @@ import { useState, useEffect } from 'react';
 
 const BookList = () => {
 
-    const [books, setBooks] = useState(
-        {
-            url: "",
-            author_name: "",
-            title: "",
-            genre: "",
-            isbn: ""
-        }
-    );
+    const [books, setBooks] = useState([]);
+    let bookdata=[];
 
     useEffect(() => {
         axios.get("http://localhost:8000/api/v1/")
         .then(res => {
-            setBooks(res.data)
+            bookdata = res.data;
+            setBooks(bookdata)
         })
-        .then(console.log(books))
     }, []);
 
     return(
         <>
         <AppHead />
-        <h1>Book List</h1>
+        <h1 style={{textAlign: "center"}}>Book List</h1>
+        {books.map((book) => (
+            <ul>
+                <li key={book.url}>{book.title}</li>
+            </ul>
+        ))}
         </>
     )
 }
