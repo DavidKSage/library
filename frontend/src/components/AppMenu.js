@@ -20,13 +20,7 @@ const AppMenu = () => {
                         <Button onClick={() => navigate("/booklist")} className="button-grey">List Books</Button>
                     </Col>                    
                     <Col>
-                        <Button onClick={() => navigate("/addbook")} className="button-grey">Add Book</Button>
-                    </Col>
-                    <Col>
-                        <Button onClick={() => navigate("/updatebook")}className="button-grey">Update Book</Button>
-                    </Col>
-                    <Col>
-                        <Button onClick={() => navigate("/deletebook")} className="button-grey">Remove Book</Button>
+                        <Button onClick={() => navigate("/bookaction")} className="button-grey">Add/Update/Remove Book</Button>
                     </Col>
                     <Col>
                         <Button onClick={() => navigate("/search")} className="button-grey">Search</Button>
